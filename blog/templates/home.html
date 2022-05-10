@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> All Posts </h1>
 
 <ul>
     {% for post in object_list %}
@@ -10,5 +13,6 @@
 </ul>
 </html>
 
+{% endblock %}
 
 
