@@ -2,7 +2,7 @@
 {% block title %} Edit post {% endblock %}
 
 {% block content %}
-
+{% if user.is_authenticated %}
 <h1> Edit post </h1>
 
 
@@ -13,8 +13,9 @@
     {{ form.as_p}}
     <button class="btn btn-secondary">Edit</button>
 <div/>
-
-
+{% else %}
+    You are not login
+{% endif%}
 
 {% endblock %}
 
